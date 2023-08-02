@@ -1,0 +1,3 @@
+python train.py --only_prefix --data ./data/coco/oscar_split_ViT-B_32_captions_train.pkl --out_dir ./coco_train/ --mapping_type transformer  --num_layers 8 --prefix_length 40 --prefix_length_clip 40
+
+python fine_tune.py --only_prefix --data ./data/coco/oscar_split_ViT-B_32_captions_train.pkl --out_dir ./coco_train/ --mapping_type transformer  --num_layers 8 --prefix_length 40 --prefix_length_clip 40
